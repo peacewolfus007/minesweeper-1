@@ -252,7 +252,7 @@ var MineSweeper = function(){
   var initializeBoard = function() {
 
     $('#board').remove();
-    this.board = [];
+    minesweeper.board = [];
     
 
     for(var i = minesweeper.boardSize -1 ; i >= 0; i--) {
