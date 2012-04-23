@@ -235,8 +235,9 @@ body{
 }
 
 #new {
-  width:100px;
+  width:150px;
   display:block;
+  clear:both;
   margin:20px auto;
   background-color: #7fbf4d;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7fbf4d), color-stop(100%, #63a62f));
@@ -324,8 +325,9 @@ body{
 .success, .failure {
   margin:0;
   height:0px;
-  position:absolute;
+  position:fixed;
   top:0;
+  left:0;
   width:100%;
   color:#FFFFFF;
   text-align:center;

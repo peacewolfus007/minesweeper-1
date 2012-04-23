@@ -207,12 +207,14 @@ var MineSweeper = function(){
   var buildHtml = function() {
 
     $('#board').remove();
-
+ 
+    var size = minesweeper.boardSize * 52 + 'px'; // account for borders
+    
     var $board = $('<div/>', {
       'id'    : 'board',
       'class' : 'minesweeper',
-      'width'  : minesweeper.boardSize * 50 + 'px',
-      'height' : minesweeper.boardSize * 50 + 'px'
+      'width' : size,
+      'height': size
     });
 
     for(var i = Math.pow(minesweeper.boardSize, 2) - 1; i >= 0 ; i--) {
