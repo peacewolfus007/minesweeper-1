@@ -1,0 +1,7 @@
+nbproject/
+.DS_Store
+.htpasswd
+app/logs/
+public_html/intermediate
+public_html/publish
+public_html/img/upload
