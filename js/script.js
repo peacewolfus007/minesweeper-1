@@ -211,15 +211,13 @@ var MineSweeper = function(){
     var $board = $('<div/>', {
       'id'    : 'board',
       'class' : 'minesweeper',
-      'width'  : minesweeper.boardSize * 52 + 'px',
-      'height' : minesweeper.boardSize * 52 + 'px'
+      'width'  : minesweeper.boardSize * 50 + 'px',
+      'height' : minesweeper.boardSize * 50 + 'px'
     });
 
     for(var i = Math.pow(minesweeper.boardSize, 2) - 1; i >= 0 ; i--) {
       $('<div/>', {
-        'class' : 'tile',
-        'width'  : '50px',
-        'height' : '50px'
+        'class' : 'tile'
       }).appendTo($board);
     }
     
